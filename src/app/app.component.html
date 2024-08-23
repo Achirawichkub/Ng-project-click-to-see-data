@@ -1,0 +1,10 @@
+<router-outlet>
+<div>
+  <button (click)="getData()">getData</button>
+</div>
+<ng-container *ngIf="loadData">
+  <h3>Response Data:</h3>
+  <pre>{{responseData | json}}</pre>
+</ng-container>
+</router-outlet>
+
